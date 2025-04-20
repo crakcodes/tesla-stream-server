@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: tesla-stream-server
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /
+    autoDeploy: true
+  
